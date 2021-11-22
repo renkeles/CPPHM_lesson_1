@@ -190,9 +190,6 @@ public:
         if(person.patronymic.has_value())
             patronymic = person.patronymic.value();
 
-
-        std::cout << surname << " " << name << " " << patronymic << std::endl;
-
         const std::pair<Person, PhoneNumber> it = *find_if(vec.begin(), vec.end(), [surname, name, patronymic, number]
         (std::pair<Person, PhoneNumber> &p){
             int check = 0;
